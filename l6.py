@@ -29,7 +29,7 @@ word = "компьютер"
 
 def gen_lex_dict(word):
     lexs = []
-    for cases in endings.items():
+    for _, cases in endings.items():
         for ending in cases.values():
             lexs.append(f"{word}{ending}")
     return lexs
